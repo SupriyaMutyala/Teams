@@ -1,0 +1,57 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "subscriptionId": {
+            "value": "c568e566-0087-4834-a7bc-58890077b576"
+        },
+        "name": {
+            "value": "originhubs"
+        },
+        "name1": {
+            "value": "dalchawal"
+        },
+        "name2": {
+            "value": "302"
+        },
+        "location": {
+            "value": "Central US"
+        },
+        "hostingPlanName": {
+            "value": "workerplan"
+        },
+        "hostingPlanName1": {
+            "value": "supriyaplan"
+        },
+        "serverFarmResourceGroup": {
+            "value": "workeracks"
+        },
+        "alwaysOn": {
+            "value": true
+        },
+        "sku": {
+            "value": "Standard"
+        },
+        "skuCode": {
+            "value": "S1"
+        },
+        "workerSize": {
+            "value": "0"
+        },
+        "workerSizeId": {
+            "value": "0"
+        },
+        "numberOfWorkers": {
+            "value": "1"
+        },
+        "currentStack": {
+            "value": "dotnetcore"
+        },
+        "phpVersion": {
+            "value": "OFF"
+        },
+        "errorLink": {
+            "value": "https://originhubs.scm.azurewebsites.net/detectors?type=tools&name=eventviewer"
+        }
+    }
+}

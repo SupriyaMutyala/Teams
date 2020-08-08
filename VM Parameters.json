@@ -1,0 +1,74 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "eastus"
+        },
+        "networkInterfaceName": {
+            "value": "supriya-machine830"
+        },
+        "networkSecurityGroupName": {
+            "value": "supriya-machine-nsg"
+        },
+        "networkSecurityGroupRules": {
+            "value": [
+                {
+                    "name": "SSH",
+                    "properties": {
+                        "priority": 300,
+                        "protocol": "TCP",
+                        "access": "Allow",
+                        "direction": "Inbound",
+                        "sourceAddressPrefix": "*",
+                        "sourcePortRange": "*",
+                        "destinationAddressPrefix": "*",
+                        "destinationPortRange": "22"
+                    }
+                }
+            ]
+        },
+        "subnetName": {
+            "value": "default"
+        },
+        "virtualNetworkId": {
+            "value": "/subscriptions/c568e566-0087-4834-a7bc-58890077b576/resourceGroups/resource2/providers/Microsoft.Network/virtualNetworks/samplevirtualnetwork"
+        },
+        "publicIpAddressName": {
+            "value": "supriya-machine-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        },
+        "virtualMachineName": {
+            "value": "supriya-machine"
+        },
+        "virtualMachineComputerName": {
+            "value": "supriya-machine"
+        },
+        "virtualMachineRG": {
+            "value": "resource2"
+        },
+        "osDiskType": {
+            "value": "Standard_LRS"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_D2s_v3"
+        },
+        "adminUsername": {
+            "value": "supriyauser"
+        },
+        "adminPassword": {
+            "value": "Supriyamachine123"
+        },
+        "diagnosticsStorageAccountName": {
+            "value": "resource2diag997"
+        },
+        "diagnosticsStorageAccountId": {
+            "value": "/subscriptions/c568e566-0087-4834-a7bc-58890077b576/resourceGroups/resource2/providers/Microsoft.Storage/storageAccounts/resource2diag997"
+        }
+    }
+}

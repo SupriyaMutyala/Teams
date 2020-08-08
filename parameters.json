@@ -1,0 +1,107 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "name": {
+            "value": "supriyakeyvault123"
+        },
+        "location": {
+            "value": "eastus"
+        },
+        "sku": {
+            "value": "Standard"
+        },
+        "accessPolicies": {
+            "value": [
+                {
+                    "objectId": "4be98602-69bb-46a1-a1bc-c85b79838fb5",
+                    "tenantId": "643b5e21-4adc-4b59-bf35-18321f054c84",
+                    "permissions": {
+                        "keys": [
+                            "Get",
+                            "List"
+                        ],
+                        "secrets": [
+                            "Get",
+                            "List"
+                        ],
+                        "certificates": []
+                    },
+                    "applicationId": "6614994b-a078-41d5-821d-c894aca85af9"
+                },
+                {
+                    "objectId": "a9b05a96-28d6-49e6-a12e-6a0bdb5ec2bf",
+                    "tenantId": "643b5e21-4adc-4b59-bf35-18321f054c84",
+                    "permissions": {
+                        "keys": [
+                            "Get",
+                            "List",
+                            "Update",
+                            "Create",
+                            "Import",
+                            "Delete",
+                            "Recover",
+                            "Backup",
+                            "Restore"
+                        ],
+                        "secrets": [
+                            "Get",
+                            "List",
+                            "Set",
+                            "Delete",
+                            "Recover",
+                            "Backup",
+                            "Restore"
+                        ],
+                        "certificates": [
+                            "Get",
+                            "List",
+                            "Update",
+                            "Create",
+                            "Import",
+                            "Delete",
+                            "Recover",
+                            "Backup",
+                            "Restore",
+                            "ManageContacts",
+                            "ManageIssuers",
+                            "GetIssuers",
+                            "ListIssuers",
+                            "SetIssuers",
+                            "DeleteIssuers"
+                        ]
+                    }
+                }
+            ]
+        },
+        "tenant": {
+            "value": "643b5e21-4adc-4b59-bf35-18321f054c84"
+        },
+        "enabledForDeployment": {
+            "value": false
+        },
+        "enabledForTemplateDeployment": {
+            "value": false
+        },
+        "enabledForDiskEncryption": {
+            "value": false
+        },
+        "enableRbacAuthorization": {
+            "value": false
+        },
+        "enableSoftDelete": {
+            "value": true
+        },
+        "softDeleteRetentionInDays": {
+            "value": 90
+        },
+        "networkAcls": {
+            "value": {
+                "defaultAction": "allow",
+                "bypass": "AzureServices",
+                "ipRules": [],
+                "virtualNetworkRules": []
+            }
+        }
+    }
+}

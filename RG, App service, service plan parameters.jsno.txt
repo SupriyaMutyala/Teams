@@ -1,0 +1,52 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "subscriptionId": {
+            "value": "c568e566-0087-4834-a7bc-58890077b576"
+        },
+        "name": {
+            "value": "OriginHubsInc"
+        },
+        "name": {
+            "value": "Daalchawal"
+
+
+        "location": {
+            "value": "East US"
+        },
+        "hostingEnvironment": {
+            "value": ""
+        },
+        "hostingPlanName": {
+            "value": "Testplan"
+        },
+        "hostingPlanName": {
+            "value": "Testplan123"
+        },
+        "serverFarmResourceGroup": {
+            "value": "test"
+        },
+        "alwaysOn": {
+            "value": true
+        },
+        "sku": {
+            "value": "PremiumV2"
+        },
+        "skuCode": {
+            "value": "P1v2"
+        },
+        "workerSize": {
+            "value": "3"
+        },
+        "workerSizeId": {
+            "value": "3"
+        },
+        "numberOfWorkers": {
+            "value": "1"
+        },
+        "linuxFxVersion": {
+            "value": "JAVA|8-jre8"
+        }
+    }
+}
